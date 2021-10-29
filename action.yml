@@ -1,0 +1,8 @@
+name: 'Goblint'
+description: 'The goblint static analysis framework'
+# TODO: add file input
+runs:
+  using: 'docker'
+  image: 'docker://ghcr.io/goblint/analyzer:latest'
+  args:
+    - "-v"

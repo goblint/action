@@ -15,4 +15,7 @@ jobs:
       - uses: goblint/action@master
         with:
           file: 01-simple_rc.c
+      - uses: github/codeql-action/upload-sarif@v1
+        with:
+          sarif_file: goblint.sarif
 ```

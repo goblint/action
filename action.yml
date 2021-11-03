@@ -8,4 +8,5 @@ runs:
   using: 'docker'
   image: 'docker://ghcr.io/goblint/analyzer:latest'
   args:
+    - '--sarif'
     - ${{ inputs.file }}

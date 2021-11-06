@@ -1,5 +1,10 @@
 name: 'Goblint'
 description: 'The goblint static analysis framework'
+author: 'Simmo Saan'
+branding:
+  icon: 'search'
+  color: 'blue'
+
 inputs:
   file:
     description: 'File to analyze'

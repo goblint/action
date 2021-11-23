@@ -7,7 +7,7 @@ branding:
 
 inputs:
   file:
-    description: 'File to analyze'
+    description: 'File or directory to analyze'
     required: true
   image:
     description: 'Goblint Docker image to use'

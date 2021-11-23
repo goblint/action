@@ -9,9 +9,13 @@ inputs:
   file:
     description: 'File to analyze'
     required: true
+  image:
+    description: 'Goblint Docker image to use'
+    required: false
+    default: 'ghcr.io/goblint/analyzer:latest'
 runs:
   using: 'docker'
-  image: 'docker://ghcr.io/goblint/analyzer:latest'
+  image: 'docker://${{ inputs.image }}'
   args:
     - '--sarif'
     - ${{ inputs.file }}
